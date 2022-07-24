@@ -20,7 +20,6 @@ import {ReactComponent as WebIcon} from '../assets/web.svg';
 import {ReactComponent as YTIcon} from '../assets/youtube.svg';
 import {ReactComponent as IGIcon} from '../assets/instagram.svg';
 import {ReactComponent as QuoraIcon} from '../assets/quora.svg';
-import {ReactComponent as PinterestIcon} from '../assets/pinterest.svg';
 import {ReactComponent as PickyIcon} from '../assets/picky.svg';
 import HTMLIcon from "../assets/html.svg";
 import SassIcon from "../assets/sass.svg";
@@ -368,7 +367,7 @@ const Home = () => {
                   rel="noreferrer"
                   href="https://pinterest.com/khairahscorner"
                 >
-                  <PinterestIcon />
+                
                 </a>
               </div>
               <div className="round-icon">
@@ -387,11 +386,9 @@ const Home = () => {
       </MainWrapper>
 
       <FooterWrapper>
-        <div className="footer-logo">
-          <FooterLogo />
-        </div>
+        
         <div className="credit">
-          © {currentYear} - Airah Yusuff. All rights reserved.
+          © {currentYear} 
         </div>
       </FooterWrapper>
     </div>
