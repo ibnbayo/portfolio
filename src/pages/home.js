@@ -85,6 +85,20 @@ const tools = [
 ]
 const projects = [
   {
+    name: "CC Vehicle Marketplace ",
+    url: "https://ibnbayo.github.io/cycler-circle-app/",
+    mark: "React JS, Material UI",
+    imgsrc: "https://i.postimg.cc/ZYQZDfFV/Screenshot-cycler-circle-jeep.png",
+    giturl: "https://github.com/ibnbayo/cycler-circle-app"
+  },
+  {
+    name: "CRUD App",
+    url: "https://ibnbayo.github.io/crud-ts/",
+    mark: "Typescript, React JS",
+    imgsrc: "https://i.postimg.cc/SRvWcLcg/Screenshot-crud-ts.png",
+    giturl: "https://github.com/ibnbayo/crud-ts"
+  },
+  {
     name: "Meme Generator",
     url: "https://ibnbayo.github.io/meme-app/",
     mark: "React JS",
@@ -279,7 +293,7 @@ const Home = () => {
               <div className="flex-row">
                   {projects.map((project, index) => (
                     <div className="member" key={`project-${index}`}>
-                      <div className="inner">
+                      <a className="inner" id="weblink" href={project.url} target="_blank" rel="noreferrer">
                       <div className="img-box">
                         <img src={project.imgsrc} alt={project.name} />
                         <div className="overlay"/>
@@ -300,7 +314,7 @@ const Home = () => {
                       <div className="subtext">
                           {project.mark}
                         </div>
-                      </div>
+                      </a>
                     </div>
                   ))}      
                 </div>

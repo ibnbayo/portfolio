@@ -21,7 +21,7 @@ export const HeaderWrapper = styled.header`
   }
   .logo {
     display: flex;
-    width: 80px;
+    width: 17vmin;
     height: auto;
     margin: -10px 0 -10px -10px;
     img {
@@ -32,6 +32,7 @@ export const HeaderWrapper = styled.header`
     }
   }
   .resume-text {
+    font-size: 3vmin;
     color: ${colors["color-primary"]};
     cursor: pointer;
     @media ${screens.mobileL} {
@@ -112,8 +113,11 @@ export const MainWrapper = styled.main`
     }
   }
   .first-section {
-    height: 80vh;
+    height: 80vmin;
     background-color: ${colors["color-light"]};
+    @media ${screens.mobileL} {
+      height: 20vh;
+    }
   }
   .intro {
     display: flex;
@@ -140,7 +144,7 @@ export const MainWrapper = styled.main`
     font-size: 1.2rem;
     margin-bottom: 20px;
     @media ${screens.mobileL} {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
   .separator {
@@ -167,8 +171,8 @@ export const MainWrapper = styled.main`
         }
     }
     .icon {
-      width: 20px;
-      height: 20px;
+      width: 7vmin;
+      height: 3vmin;
       margin-right: 15px;
     }
     a {
@@ -255,6 +259,7 @@ export const MainWrapper = styled.main`
             border-top-right-radius: 10px;
         }
     }
+    
   }
   .content {
     display: flex;
