@@ -34,3 +34,5 @@ yarn-error.log*
 
 .metals
 /.yarn
+# Local Netlify folder
+.netlify
